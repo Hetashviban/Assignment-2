@@ -1,0 +1,250 @@
+<!DOCTYPE html> <!-- Doctype declares the version(type) of the document -->
+<!-- Pizza Website: Hetashvi Ban -->
+<html lang="en"> <!-- html is the root of the HTML document and lang defines the language of the elements -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta communicates with the browser and search engines -->
+    <title> Pizza Slice </title> <!-- title is a document's title which is shown in a browser's title bar -->
+    <meta name="description"
+        content="Welcome to  Pizza Slice! Order your favorite pizza and get it delivered to your doorstep! We sell premium quality pizza! ">
+    <!-- This is the description of the webpage-->
+    <meta name="robots" content="nofollow,noindex">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Tinos:wght@700&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body class="row"><!--This is the place where the content of the document goes-->
+    <header> <!-- The top of the website where the logo and navigation option will be displayed -->
+        <!-- Logo container-->
+        <div>
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+        <nav><!--This will be used to navigate through other websites-->
+            <menu>
+                <li><a href="index.html"> Home </a> </li>
+                <li><a href="index.html"> Menu </a></li>
+                <li><a href="index.html"> Rewards </a></li>
+                <li><a href="index.html"> Careers </a></li>
+                <li><a href="index.html"> Coupons </a></li>
+            </menu>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <form action="#">
+
+            <section class="col1"><!-- First column of the webpage-->
+                <h2> Customize your pizza! </h2> <!--Heading of the first column-->
+                <!-- Service Method: 2 options to choose from-->
+                <!-- The user can only choose one option out of the two-->
+                <div>
+                    <label> Service Method: </label>
+                    <label for="choice1"><!--Option 1-->
+                        <input type="radio" name="method" value="Delivery" id="choice1"> Delivery
+                    </label>
+                    <label for="choice2"><!--Option 2-->
+                        <input type="radio" name="method" value="Takeout" id="choice2"> Takeout
+                    </label>
+                </div>
+
+                <!--Pizza Size: Small,Medium,Large,Extra large-->
+                <label> Pizza Size </label><!--This adds name of the each category-->
+                <div>
+                    <select name="Pizza_size"
+                        id="card_type"><!--select adds the dropdown menu out of which the user will select-->
+                        <option value=""> -- Select the Pizza size -- </option>
+                        <!--This are the options of the dropdown menu-->
+                        <option value="Small (10 inches)"> Small (10 inches) </option>
+                        <option value="Medium (12 inches)"> Medium (12 inches) </option>
+                        <option value="Large (14 inches)"> Large (14 inches) </option>
+                        <option value="Extra-Large (16 inches)"> Extra Large (16 inches) </option>
+                    </select>
+                </div>
+
+
+                <!--No of pizzas: Quantity of the pizzas the user want to order-->
+                <label> Quantity </label>
+                <div>
+                    <select name="quantity" id="quantity">
+                        <option value=""> -- No of pizzas -- </option>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                    </select>
+                </div>
+
+                <!-- Pizza Crust: Different pizza crust options will be displayed here-->
+                <label> Pizza Crust </label>
+                <div>
+                    <select name="pizza_crust" id="pizza_crust">
+                        <option value=""> -- Select your pizza crust -- </option>
+                        <option value="Thin Crust"> Regular </option>
+                        <option value="Thin Crust"> Thin crust </option>
+                        <option value="Gluten free crust"> Gluten free crust </option>
+                        <option value="Whole grain Crust"> Whole grain crust </option>
+                        <option value="Cauliflower Crust"> Cauliflower crust </option>
+                    </select>
+                </div>
+
+                <!--Cheese: Different types of cheese to choose from-->
+                <label> Cheese </label>
+                <div>
+                    <select name="cheese" id="cheese1">
+                        <option value=""> -- Select your cheese -- </option>
+                        <option value="No cheese"> No cheese </option>
+                        <option value="Cheddar"> Cheddar </option>
+                        <option value="Mozzarella"> Mozzarella </option>
+                        <option value="Feta"> Feta </option>
+                        <option value="Dairy-free cheese"> Dairy-free cheese </option>
+                    </select>
+                </div>
+
+                <!--Sauce: Different sauces to choose from-->
+                <label> Sauce </label>
+                <div>
+                    <select name="sauce" id="sauce">
+                        <option value=""> -- Select your sauce -- </option>
+                        <option value="No sauce"> No sauce </option>
+                        <option value="Tomato"> Tomato </option>
+                        <option value="Pesto"> Pesto </option>
+                        <option value="BBQ Sauce"> BBQ Sauce </option>
+                        <option value="Ranch"> Ranch </option>
+                        <option value="Alfredo"> Alfredo </option>
+                    </select>
+                </div>
+
+                <!--Veggies: Different vegetables or toppings to add to the pizza-->
+                <label> Veggies </label>
+                <div>
+                    <select name="cheese" id="cheese">
+                        <option value=""> -- Select your veggies -- </option>
+                        <option value="Olives"> Olives </option>
+                        <option value="Pineapples"> Pineapples </option>
+                        <option value="Mushrooms"> Mushrooms </option>
+                        <option value="Spinach"> Spinach </option>
+                        <option value="Tomato"> Tomato </option>
+                        <option value="Onions"> Onions </option>
+                    </select>
+                </div>
+
+                <!--Meat: Different kinds of meat that the user can add to their pizza-->
+                <label> Meat </label>
+                <div>
+                    <select name="meat" id="meat">
+                        <option value=""> -- Select your meat -- </option>
+                        <option value="No meat"> No meat </option>
+                        <option value="Ham"> Ham </option>
+                        <option value="Chicken"> Chicken </option>
+                        <option value="Pepperoni"> Pepperoni </option>
+                        <option value="Bacon"> Bacon </option>
+                        <option value="Sausage"> Sausage </option>
+                        <option value="Beef"> Beef </option>
+                    </select>
+                </div>
+            </section>
+
+
+
+
+            <section class="col2">
+                <!-- CONTACT INFORMATION: Here the usr will add their address and pay for their pizza-->
+                <h2> Personal Information & Payment </h2> <!-- Heading of the second column-->
+                <label> First name </label><br><!-- The user will input their first name-->
+                <div>
+                    <input type="text" required placeholder="First name"> <br>
+                </div>
+
+                <label> Last name </label><br><!-- The user will input their last name-->
+                <div>
+                    <input type="text" required placeholder="Last name"> <br>
+                </div>
+
+                <label> Email </label><br><!--The user will input their email-->
+                <div>
+                    <input type="email" required placeholder="Email"><br>
+                </div>
+
+                <label> Address </label><br><!--The user will input the address-->
+                <div>
+                    <textarea placeholder="Enter your address" name="address" id="address" required rows="3"
+                        cols="20"></textarea><br><!--Textarea will give user a larger place to enter the information-->
+                </div>
+
+                <label> Mobile number:</label><br><!--The user will input their contact no-->
+                <div>
+                    <input type="tel" id="telephone" required><br>
+                </div>
+
+                <label> Postal code</label><br><!--The user will input their postal code-->
+                <div>
+                    <input type="text" required placeholder="Postal code">
+                </div>
+
+                <label> Accepted cards: </label><!--This displays the cards that are accepted for payment-->
+                <div>
+                    <img src="./img/acceptedcards.png" alt="Accepted Cards">
+                </div>
+
+                <label> Select a card Type </label><br><!--The user will select the card type-->
+                <div>
+                    <select name="card_type">
+                        <option value=""> --Select a card type--</option>
+                        <option value="Visa"> Visa</option>
+                        <option value="Mastercard"> Mastercard </option>
+                        <option value="Paypal"> Paypal </option>
+                        <option value="American Express"> American Express</option>
+                    </select> <br>
+                </div>
+
+                <label> Name on Card</label><br><!--The user will add their name mentioned on the card-->
+                <div>
+                    <input type="text" id="card_name" required placeholder="Name on card"><br>
+                </div>
+
+                <label for="creditcardnumber"> Card number </label><br><!--Credit/debit card number-->
+                <div>
+                    <input type="tel" id="creditcardnumber" required> <br>
+                </div>
+
+                <label> Expiration date </label><br><!--Expiration date -->
+                <div>
+                    <input type="date" name="exp_date" id="exp_date" required>
+                    <br><!--Input type date will allow user to choose their desired date from yearly calender-->
+                </div>
+
+                <label> CVV </label><br><!--CVV-->
+                <div>
+                    <input type="password" name="cvv" id="cvv"
+                        required><br><!--Using password will hide all the content that the user will enter-->
+                </div>
+                <div>
+                    <input type="submit" value="Place order"><!--Submit button is made which has Place order as text-->
+                </div>
+            </section>
+        </form>
+    </main>
+
+
+
+
+    <footer><!--Footer of the website-->
+        <!--This includes information of the website-->
+        <div>
+            <h5> This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. </h5>
+            <h6> Copyright © Fresh Pizza 2023 </h6>
+        </div>
+    </footer>
+</body>
+
+</html>
